@@ -215,5 +215,10 @@ namespace TcmbExchangeRates
         {
             MessageBox.Show(dataGridView1.Rows[0].Cells[2].Value.ToString());
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            progressBar1.Value = 0;
+        }
     }
 }
