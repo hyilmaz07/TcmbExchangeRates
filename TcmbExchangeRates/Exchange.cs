@@ -170,7 +170,8 @@ namespace TcmbExchangeRates
             }
             catch (Exception ex)
             {
-                throw new Exception("The date specified may be a weekend or a public holiday!");
+                DataTable dt = new DataTable();
+                return dt;
             }
         }
 
